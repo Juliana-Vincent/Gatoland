@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style2.css">
+  <script src="script.js"></script>
+  <style>
+    @font-face {
+      font-family: Nice Honey;
+      src: url(nice_honey/Nice\ Honey.ttf);
+    }
+  </style>
+  <title>Questionnaire</title>
+</head>
+<body style="font-family: Nice Honey;">
+  <div class="container">
+      <div class="logoBox">
+        <a href="index.html"><img style="width: 120px;" src="img/catsHead.png" alt="catsHead"></a>
+      </div>
+      <form action="#">
+        <label for="name">Your meow🐾 and surmeow🐾</label><br>
+        <input type="text"><br><br>
+        <label for="email">Your meow-mail</label><br>
+        <input type="email"><br><br>
+        <label for="number">Your meownumber</label><br>
+        <input type="text"><br><br>
+        <label for="choose">Choose a kitten</label><br>
+        <select id="choose">
+          <option value="" disabled selected>choose</option>
+          <option value="amoral">Amoral</option>
+          <option value="jesus">Jesus</option>
+          <option value="ubermarginal">Ubermarginal</option>
+          <option value="dk">DK</option>
+          <option value="konstiantyn">Konstiantyn</option>
+        </select><br><br>
+        <label for="code">Your code🐾</label><br>
+        <div id="linie">
+          <div class="margo"><input type="text"></div>
+        </div>
+        <button id="plusLinie"><span class="plus">+</span>add code🐾</button>
+        <br><br><br>
+
+        <hr><br>
+        
+        <label>
+          <input class="tik" type="checkbox" name="souhlas1" id="">souhlas s <a class="link" href="https://www.zakony.cz/obchodni-podminky/" target="_blank">obchodnimi podminkamy</a>
+        </label><br><br>
+        <label>
+          <input class="tik" type="checkbox" name="souhlas2" id="">souhlas s <a class="link" href="https://gdpr-info.eu" target="_blank">GDPR</a>
+        </label><br><br>
+        <label>
+          <input class="tik" type="checkbox" name="souhlas3" id="">souhlas s marketing ucely
+        </label><br><br><br><br>
+        
+
+        <input id="submitButton" disabled class="submit" type="submit" value="submit"><br><br><br>
+      </form>
+        
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
