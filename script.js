@@ -2,7 +2,7 @@ document.getElementById("plusLinie").addEventListener("click", function() {
   const linie = document.getElementById("linie");
   const neueLinie = document.createElement("div");
   neueLinie.className = "margo";
-  neueLinie.innerHTML = '<input type="text">';
+  neueLinie.innerHTML = '<input type="text" name="code">';
   linie.appendChild(neueLinie);
 });
 

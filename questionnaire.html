@@ -18,15 +18,15 @@
       <div class="logoBox">
         <a href="index.html"><img style="width: 120px;" src="img/catsHead.png" alt="catsHead"></a>
       </div>
-      <form action="#">
+      <form action="/submit" method="POST">
         <label for="name">Your meow🐾 and surmeow🐾</label><br>
-        <input type="text"><br><br>
+        <input type="text" name="username"><br><br>
         <label for="email">Your meow-mail</label><br>
-        <input type="email"><br><br>
+        <input type="email" name="email"><br><br>
         <label for="number">Your meownumber</label><br>
-        <input type="text"><br><br>
+        <input type="text" name="phonenumber"><br><br>
         <label for="choose">Choose a kitten</label><br>
-        <select id="choose">
+        <select id="choose" name="kitten">
           <option value="" disabled selected>choose</option>
           <option value="amoral">Amoral</option>
           <option value="jesus">Jesus</option>
