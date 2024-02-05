@@ -33,11 +33,6 @@ const pool = new Pool({
 app.post('/submit', async (req, res) => {
   const { username, email, phonenumber, kitten, coupons } = req.body;
 
-  const result = await pool.query(
-    'INSERT INTO gato (username, email, phonenumber, kitten, coupons) VALUES ($1, $2, $3, $4, $5)',
-    [username, email, phonenumber, kitten, coupons]
-  );
-
   if (!username || !email || !phonenumber || !kitten || !coupons) {
     return res.status(400).send('Missing data');
   }
