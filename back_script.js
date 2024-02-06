@@ -11,6 +11,7 @@ const pool = new Pool({
   password: '4chan',
   port: 5432,
 });
+
 app.use(express.static('gatoland'));
 app.post('/submit', async (req, res) => {
   const { username, email, phonenumber, kitten, coupons } = req.body;
@@ -29,7 +30,6 @@ app.post('/submit', async (req, res) => {
     res.status(500).send('Server error');
   }
 });
-
 
 app.listen(3000, () => {
   console.log('Server is running on port 3000');
