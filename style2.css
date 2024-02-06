@@ -18,7 +18,7 @@ body {
   justify-content: center;
 }
 input, select {
-  min-width: 260px;
+  min-width: 300px;
   min-height: 20px;
   font-size: medium;
   border-radius: 7.5px;
@@ -32,6 +32,9 @@ input, select {
   background: none;
   font-size: medium;
   font-family: Nice Honey;
+}
+#linie{
+  margin-bottom: -30px;
 }
 .plus {
   font-family: Nice Honey; 
@@ -51,7 +54,7 @@ hr{
 }
 
 .tik{
-  margin-right: -230px;
+  margin-right: -260px;
 }
 
 .link:link{
@@ -66,9 +69,20 @@ hr{
 a:active {
   color: rgb(227, 50, 207);
 }
-
+.bottom_button {
+  display: flex;
+  justify-content: center;
+}
 .submit {
+  min-width: 180px;
+  min-height: 20px;
+  font-size: medium;
+  border-radius: 20px;
+  border-color: rgb(243, 219, 219);
+  border-style: dashed;
   background-color: white;
+  font-family: Nice Honey;
+  margin-top: -1px;
 }
 .submit:hover {
   color: rgb(248, 168, 181);

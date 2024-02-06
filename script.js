@@ -1,11 +1,11 @@
-document.getElementById("plusLinie").addEventListener("click", function() {
+document.getElementById("plusLinie").addEventListener("click", function(event) {
+  event.preventDefault();
   const linie = document.getElementById("linie");
   const neueLinie = document.createElement("div");
   neueLinie.className = "margo";
   neueLinie.innerHTML = '<input type="text" name="code2">';
   linie.appendChild(neueLinie);
 });
-
 var checkboxes = document.querySelectorAll('.tik');
 var button = document.getElementById('submitButton');
 
