@@ -10,7 +10,7 @@ const pool = new Pool({
   password: '4chan',
   port: 5432,
 });
-
+app.use(express.static('gatoland'));
 app.post('/submit', async (req, res) => {
   const { username, email, phonenumber, kitten, coupons } = req.body;
 
@@ -22,12 +22,13 @@ app.post('/submit', async (req, res) => {
       'INSERT INTO gato (username, email, phonenumber, kitten, coupons) VALUES ($1, $2, $3, $4, $5)',
       [username, email, phonenumber, kitten, coupons]
     );
-    res.send('Data submitted successfully');
+    res.redirect('end.html');
   } catch (err) {
     console.error(err);
     res.status(500).send('Server error');
   }
 });
+
 
 app.listen(3000, () => {
   console.log('Server is running on port 3000');
